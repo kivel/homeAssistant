@@ -1,0 +1,76 @@
+- platform: knx
+  name: kitchen_ceiling
+  address:                  '2/0/15'
+  brightness_address:       '2/0/17'
+  state_address:            '2/7/15'
+  brightness_state_address: '2/7/17'
+
+- platform: knx
+  name: diningroom_ceiling
+  address:                  '2/0/45'
+  brightness_address:       '2/0/47'
+  state_address:            '2/7/45'
+  brightness_state_address: '2/7/47'
+
+- platform: knx
+  name: livingroom_wall
+  address:                  '2/0/50'
+  brightness_address:       '2/0/52'
+  state_address:            '2/7/50'
+  brightness_state_address: '2/7/52'
+
+- platform: knx
+  name: guest_ceiling
+  address:                  '2/0/70'
+  brightness_address:       '2/0/72'
+  state_address:            '2/7/70'
+  brightness_state_address: '2/7/72'
+
+- platform: knx
+  name: corridor2_ceiling
+  address:                  '2/0/90'
+  brightness_address:       '2/0/92'
+  state_address:            '2/7/90'
+  brightness_state_address: '2/7/92'
+
+- platform: knx
+  name: entrance_ceiling
+  address:                  '2/0/105'
+  brightness_address:       '2/0/107'
+  state_address:            '2/7/105'
+  brightness_state_address: '2/7/107'
+
+- platform: knx
+  name: bedroom_wall
+  address:                  '3/0/20'
+  brightness_address:       '3/0/22'
+  state_address:            '3/7/20'
+  brightness_state_address: '3/7/22'
+
+- platform: knx
+  name: dressingroom_ceiling
+  address:                  '3/0/25'
+  brightness_address:       '3/0/27'
+  state_address:            '3/7/25'
+  brightness_state_address: '3/7/27'
+
+- platform: knx
+  name: bathroom_ceiling
+  address:                  '3/0/35'
+  brightness_address:       '3/0/37'
+  state_address:            '3/7/35'
+  brightness_state_address: '3/7/37'
+
+- platform: knx
+  name: stairs_ceiling1
+  address:                  '3/0/40'
+  brightness_address:       '3/0/42'
+  state_address:            '3/7/40'
+  brightness_state_address: '3/7/42'
+
+- platform: knx
+  name: stairs_ceiling2
+  address:                  '3/0/45'
+  brightness_address:       '3/0/47'
+  state_address:            '3/7/45'
+  brightness_state_address: '3/7/47'

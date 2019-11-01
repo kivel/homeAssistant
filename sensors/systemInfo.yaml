@@ -1,0 +1,21 @@
+- platform: systemmonitor
+  resources:
+  - type: disk_use_percent
+    arg: /
+  - type: memory_use_percent
+  - type: memory_free
+  - type: load_1m
+  - type: load_5m
+  - type: load_15m
+- platform: statistics
+  name: 'CPU Load 1 min'
+  entity_id: sensor.load_1m
+- platform: statistics
+  name: 'CPU Load 5 min'
+  entity_id: sensor.load_5m
+- platform: statistics
+  name: 'CPU Load 15 min'
+  entity_id: sensor.load_15m
+- platform: statistics
+  name: 'free memory'
+  entity_id: sensor.memory_free

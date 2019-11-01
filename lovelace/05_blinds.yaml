@@ -1,0 +1,46 @@
+- title: Blinds
+  cards:
+    - type: entities
+      title: Blinds
+      show_header_toggle: false
+      entities:
+        - type: section
+          label: Groundfloor
+        - entity: cover.kitchen
+        - type: custom:slider-entity-row
+          entity: cover.kitchen
+          full_row: true
+        - entity: cover.main_left
+        - type: custom:slider-entity-row
+          entity: cover.main_left
+          full_row: true
+        - entity: cover.main_center
+        - type: custom:slider-entity-row
+          entity: cover.main_center
+          full_row: true
+        - entity: cover.main_right
+        - type: custom:slider-entity-row
+          entity: cover.main_right
+          full_row: true
+        - entity: cover.guest
+        - type: custom:slider-entity-row
+          entity: cover.guest
+          full_row: true
+        - type: section
+          label: Upstairs
+        - entity: cover.bedroom
+        - type: custom:slider-entity-row
+          entity: cover.bedroom
+          full_row: true
+        - entity: cover.child
+        - type: custom:slider-entity-row
+          entity: cover.child
+          full_row: true
+        - entity: cover.multimedia_left
+        - type: custom:slider-entity-row
+          entity: cover.multimedia_left
+          full_row: true
+        - entity: cover.multimedia_right
+        - type: custom:slider-entity-row
+          entity: cover.multimedia_right
+          full_row: true

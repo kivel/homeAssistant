@@ -1,0 +1,21 @@
+- title: Statistics
+  panel: true
+  cards:
+  - type: custom:layout-card
+    layout: vertical
+    column_num: 2
+    cards:
+    - type: entities
+      title: Raspberry Pi
+      show_header_toggle: false
+      entities:
+      - sensor.cpu_load_1_min_mean
+      - sensor.cpu_load_5_min_mean
+      - sensor.cpu_load_15_min_mean
+      - sensor.free_memory_mean
+    - type: entities
+      title: Weather
+      show_header_toggle: false
+      entities:
+      - sensor.roof_temperature_mean
+      - sensor.roof_wind_mean

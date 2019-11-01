@@ -1,0 +1,34 @@
+title: My Awesome Home
+resources:
+  - url: /local/simple-thermostat.js?v=1
+    type: module
+  - url: /local/slider-entity-row.js
+    type: module
+  - url: /local/card-tools.js?v=1
+    type: js
+  - url: /local/layout-card.js?v=1
+    type: js
+  - url: /local/banner-card.js?v=1
+    type: module
+  - url: /local/mini-graph-card-bundle.js?v=0.6.0
+    type: module
+
+views: !include_dir_merge_list lovelace/
+#
+#
+#       - type: entities
+#         title: Sensors
+#         show_header_toggle: false
+#         entities:
+#           - type: section
+#             label: Weather
+#           - type: sensor
+#             entity: sensor.roof_temperature
+#           - type: sensor
+#             entity: sensor.roof_wind
+#           - type: sensor
+#             entity: sensor.roof_illuminance
+#
+#
+
+#

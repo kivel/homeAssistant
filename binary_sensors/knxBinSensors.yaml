@@ -1,0 +1,116 @@
+- platform: knx
+  name: roof_precipitation
+  device_class: moisture
+  state_address: '0/1/103'
+
+- platform: knx
+  name: roof_twilight
+  device_class: light
+  state_address: '0/1/101'
+
+- platform: knx
+  name: motion_utility
+  device_class: motion
+  state_address: '1/5/50'
+
+- platform: knx
+  name: motion_workshop
+  device_class: motion
+  state_address: '1/5/55'
+
+- platform: knx
+  name: motion_garage
+  device_class: motion
+  state_address: '1/5/60'
+
+- platform: knx
+  name: motion_storage
+  device_class: motion
+  state_address: '1/5/65'
+
+- platform: knx
+  name: motion_corridor1_ceiling
+  device_class: motion
+  state_address: '1/5/70'
+
+- platform: knx
+  name: motion_corridor1_stairs
+  device_class: motion
+  state_address: '1/5/71'
+
+
+
+- platform: knx
+  name: motion_livingroom
+  device_class: motion
+  state_address: '2/5/50'
+
+- platform: knx
+  name: motion_guest
+  device_class: motion
+  state_address: '2/5/55'
+
+- platform: knx
+  name: motion_corridor2_ceiling
+  device_class: motion
+  state_address: '2/5/60'
+
+- platform: knx
+  name: motion_corridor2_wall
+  device_class: motion
+  state_address: '2/5/61'
+
+- platform: knx
+  name: motion_corridor2_stairs
+  device_class: motion
+  state_address: '2/5/62'
+
+- platform: knx
+  name: motion_entrance
+  device_class: motion
+  state_address: '2/5/65'
+
+- platform: knx
+  name: motion_restroom
+  device_class: motion
+  state_address: '2/5/70'
+
+- platform: knx
+  name: motion_patio
+  device_class: motion
+  state_address: '2/5/75'
+
+- platform: knx
+  name: motion_bedroom_ceiling
+  device_class: motion
+  state_address: '3/5/50'
+
+- platform: knx
+  name: motion_bedroom_floor
+  device_class: motion
+  state_address: '3/5/51'
+
+- platform: knx
+  name: motion_dressingroom
+  device_class: motion
+  state_address: '3/5/55'
+
+- platform: knx
+  name: motion_bathroom
+  device_class: motion
+  state_address: '3/5/60'
+
+- platform: knx
+  name: motion_corridor3_wall
+  device_class: motion
+  state_address: '3/5/65'
+
+- platform: knx
+  name: motion_child
+  device_class: motion
+  state_address: '3/5/70'
+
+- platform: knx
+  name: motion_multimedia
+  device_class: motion
+  state_address: '3/5/75'

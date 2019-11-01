@@ -1,0 +1,17 @@
+- platform: group
+  name: groundfloor
+  entities:
+  - cover.kitchen
+  - cover.main_right
+  - cover.main_center
+  - cover.main_left
+  - cover.guest
+
+- platform: group
+  name: livingroom
+  entities:
+  - cover.main_right
+  - cover.main_center
+  - cover.main_left
+
+

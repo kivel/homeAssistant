@@ -1,0 +1,59 @@
+homeassistant:
+  auth_providers:
+    - type: trusted_networks
+      trusted_networks:
+        - 10.0.0.0/24
+      allow_bypass_login: true
+
+  customize: !include customize.yaml
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+updater:
+  reporting: false
+
+weather:
+  - platform: darksky
+    api_key: !secret darkskyAPI
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+# KNX
+knx:
+  tunneling:
+    host: '10.0.0.75'
+    port: 3671
+#    local_ip: '10.0.0.211'
+
+#group: !include groups.yaml
+group: !include group_motion.yaml
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+#Switches
+switch: !include_dir_merge_list switches/
+
+#Light
+light: !include_dir_merge_list lights/
+
+# Blinds
+cover: !include_dir_merge_list covers/
+
+# Sensors
+binary_sensor: !include_dir_merge_list binary_sensors/
+sensor: !include_dir_merge_list sensors/
+
+# Climate
+climate: !include_dir_merge_list climate/
+
+lovelace:
+  mode: yaml
+

@@ -1,0 +1,91 @@
+- title: Home
+  path: home
+  panel: true
+  cards:
+  - type: custom:layout-card
+    layout: vertical
+    #      column_num: 3
+    cards:
+    - type: weather-forecast
+      entity: weather.dark_sky
+      name: Zeihen / AG
+    - type: glance
+      entities:
+      - binary_sensor.roof_precipitation
+      - sensor.roof_temperature
+      - sensor.roof_wind
+      - sensor.roof_illuminance
+    - type: glance
+      entities:
+      - group.all_switches
+    - type: history-graph
+      title: Roof
+      entities:
+      - sensor.roof_temperature_mean
+      - sensor.roof_wind_mean
+      - sensor.roof_wind
+    - type: glance
+      title: System Information
+      entities:
+      - sensor.load_1m
+      - sensor.load_5m
+      - sensor.load_15m
+      - sensor.memory_use_percent
+    - break
+    - type: entities
+      title: Livingroom
+      show_header_toggle: true
+      entities:
+        - type: section
+          label: Lights
+        - type: custom:slider-entity-row
+          entity: light.livingroom_wall
+          toggle: true
+        - entity: switch.livingroom_socket2
+        - type: section
+          label: Blinds
+        - entity: cover.main_left
+    - type: entities
+      title: Diningroom
+      show_header_toggle: true
+      entities:
+        - type: section
+          label: Lights
+        - type: custom:slider-entity-row
+          entity: light.diningroom_ceiling
+          name: Table
+          toggle: true
+        - type: custom:slider-entity-row
+          entity: light.living_room
+          toggle: true
+        - type: section
+          label: Blinds
+        - entity: cover.main_center
+        - entity: cover.main_right
+    - break
+    - type: entities
+      title: Kitchen
+      show_header_toggle: true
+      entities:
+        - type: section
+          label: Lights
+        - type: custom:slider-entity-row
+          entity: light.kitchen_ceiling
+          toggle: true
+        - entity: switch.kitchen_lowerupper
+        - type: section
+          label: Blinds
+        - entity: cover.kitchen
+    - type: entities
+      title: Guest
+      show_header_toggle: true
+      entities:
+        - type: section
+          label: Lights
+        - type: custom:slider-entity-row
+          entity: light.guest_ceiling
+          toggle: true
+        #- entity: switch.kitchen_lowerupper
+        - type: section
+          label: Blinds
+        - entity: cover.guest

@@ -1,0 +1,71 @@
+- title: SandBox
+  panel: true
+  cards:
+  - type: custom:layout-card
+    layout: vertical
+    column_num: 2
+    cards:
+    - type: entities
+      title: Automation
+      entities:
+      - type: section
+        label: Blinds
+      - entity: automation.beschattung
+    - type: entities
+      title: Motion
+      show_header_toggle: false
+      entities:
+      - type: section
+        label: Groundfloor
+      - entity: group.motiongf
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_livingroom
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_guest
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_corridor2_ceiling
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_corridor2_stairs
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_corridor2_wall
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_restroom
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_entrance
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_patio
+        secondary_info: last-changed
+      - type: section
+        label: Upstairs
+      - entity: group.motion2f
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_bedroom_ceiling
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_bedroom_floor
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_dressingroom
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_bathroom
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_corridor3_wall
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_child
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_multimedia
+        secondary_info: last-changed
+      - type: section
+        label: Basement
+      - entity: group.motionbm
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_utility
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_workshop
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_garage
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_storage
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_corridor1_ceiling
+        secondary_info: last-changed
+      - entity: binary_sensor.motion_corridor1_stairs
+        secondary_info: last-changed

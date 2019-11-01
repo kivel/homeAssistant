@@ -1,0 +1,25 @@
+# weather prediction
+- platform: yr
+
+- platform: knx
+  name: roof_illuminance
+  state_address: '0/1/100'
+  type: 'illuminance'
+
+- platform: knx
+  name: roof_temperature
+  state_address: '0/1/102'
+  type: 'temperature'
+
+- platform: statistics
+  name: roof_temperature
+  entity_id: sensor.roof_temperature
+
+- platform: knx
+  name: roof_wind
+  state_address: '0/1/105'
+  type: 'speed_ms'
+
+- platform: statistics
+  name: roof_wind
+  entity_id: sensor.roof_wind

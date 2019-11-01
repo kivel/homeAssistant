@@ -1,0 +1,61 @@
+- title: Heating
+  cards:
+    - type: custom:simple-thermostat
+      entity: climate.workshop_temp
+      name: Workshop
+      step_size: 1
+      sensors:
+        - entity: sensor.workshop_valve
+          name: Valve
+      hide:
+        state: true
+
+    - type: custom:simple-thermostat
+      entity: climate.guest_temp
+      name: Guest
+      step_size: 1
+      sensors:
+        - entity: sensor.guest_valve
+          name: Valve
+      hide:
+        state: true
+
+    - type: custom:simple-thermostat
+      entity: climate.livingroom_temp
+      name: Livingroom
+      step_size: 1
+      sensors:
+        - entity: sensor.livingroom_valve
+          name: Valve
+      hide:
+        state: true
+
+    - type: custom:simple-thermostat
+      entity: climate.bedroom_temp
+      name: Master bedroom
+      step_size: 1
+      sensors:
+        - entity: sensor.bedroom_valve
+          name: Valve
+      hide:
+        state: true
+
+    - type: custom:simple-thermostat
+      entity: climate.child_temp
+      name: Child
+      step_size: 1
+      sensors:
+        - entity: sensor.child_valve
+          name: Valve
+      hide:
+        state: true
+
+    - type: custom:simple-thermostat
+      entity: climate.multimedia_temp
+      name: Small bedroom
+      step_size: 1
+      sensors:
+        - entity: sensor.multimedia_valve
+          name: Valve
+      hide:
+        state: true

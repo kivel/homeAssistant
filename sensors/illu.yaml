@@ -1,0 +1,34 @@
+- platform: knx
+  name: workshop_illu
+  state_address: '1/5/0'
+  type: 'illuminance'
+
+- platform: knx
+  name: livingroom_illu
+  state_address: '2/5/0'
+  type: 'illuminance'
+
+- platform: knx
+  name: guest_illu
+  state_address: '2/5/5'
+  type: 'illuminance'
+
+- platform: knx
+  name: corridor_illu
+  state_address: '2/5/10'
+  type: 'illuminance'
+
+- platform: knx
+  name: bedroom_illu
+  state_address: '3/5/0'
+  type: 'illuminance'
+
+- platform: knx
+  name: child_illu
+  state_address: '3/5/5'
+  type: 'illuminance'
+
+- platform: knx
+  name: multimedia_illu
+  state_address: '3/5/10'
+  type: 'illuminance'

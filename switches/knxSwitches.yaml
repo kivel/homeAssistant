@@ -1,0 +1,175 @@
+################################################################################
+# general
+################################################################################
+
+- platform: knx
+  name: blinds_shadow_all
+  address:       '0/1/4'
+
+- platform: knx
+  name: blinds_shadow_groundfloor
+  address:       '0/1/14'
+
+- platform: knx
+  name: blinds_shadow_upperfloor
+  address:       '0/1/24'
+
+################################################################################
+# basement
+################################################################################
+
+- platform: knx
+  name: utility_ceiling
+  address:       '1/0/0'
+  state_address: '1/7/0'
+
+- platform: knx
+  name: storage_ceiling
+  address:       '1/0/5'
+  state_address: '1/7/5'
+
+- platform: knx
+  name: corridor1_ceiling
+  address:       '1/0/10'
+  state_address: '1/7/10'
+
+- platform: knx
+  name: workshop_ceiling
+  address:       '1/0/15'
+  state_address: '1/7/15'
+
+- platform: knx
+  name: driveway_ceiling
+  address:       '1/0/20'
+  state_address: '1/7/20'
+
+- platform: knx
+  name: garage_ceiling
+  address:       '1/0/25'
+  state_address: '1/7/25'
+
+################################################################################
+# ground floor
+################################################################################
+
+# 2/0/110 for lower and upper
+- platform: knx
+  name: kitchen_lower
+  address: '2/0/5'
+  state_address: '2/7/5'
+
+- platform: knx
+  name: kitchen_upper
+  address: '2/0/10'
+  state_address: '2/7/10'
+
+# 2/0/15 kitchen ceiling (dali)
+# 2/0/20 kitchen offtake (dali)
+
+- platform: knx
+  name: livingroom_ceiling
+  address: '2/0/25'
+  state_address: '2/7/25'
+
+- platform: knx
+  name: livingroom_socket2
+  address: '2/0/30'
+  state_address: '2/7/30'
+
+- platform: knx
+  name: livingroom_socket3
+  address: '2/0/35'
+  state_address: '2/7/35'
+
+- platform: knx
+  name: livingroom_socket4
+  address: '2/0/40'
+  state_address: '2/7/40'
+
+# 2/0/45 dining ceiling
+# 2/0/50 living wall
+
+- platform: knx
+  name: facade_light_south
+  address: '2/0/55'
+  state_address: '2/7/55'
+
+- platform: knx
+  name: facade_light_west
+  address: '2/0/60'
+  state_address: '2/7/60'
+
+- platform: knx
+  name: guest_socket
+  address: '2/0/65'
+  state_address: '2/7/65'
+
+# 2/0/70 guest ceiling (dali)
+# 2/0/{75,80,85} not in use
+# 2/0/90 corridor ceiling (dail)
+# 2/0/95 corridor trigger
+
+- platform: knx
+  name: restroom_ceiling
+  address: '2/0/100'
+  state_address: '2/7/100'
+
+# 2/0/105 entrance (dali)
+- platform: knx
+  name: kitchen_lowerupper
+  address: '2/0/110'
+  state_address: '2/7/110'
+
+################################################################################
+# upper floor
+################################################################################
+
+- platform: knx
+  name: bedroom_ceiling
+  address:       '3/0/0'
+  state_address: '2/7/0'
+
+- platform: knx
+  name: bedroom_socket1
+  address:       '3/0/5'
+  state_address: '3/7/5'
+
+- platform: knx
+  name: bedroom_socket_left
+  address:       '3/0/10'
+  state_address: '3/7/10'
+
+- platform: knx
+  name: bedroom_socket_right
+  address:       '3/0/15'
+  state_address: '3/7/15'
+
+- platform: knx
+  name: bathroom_mirror
+  address:       '3/0/30'
+  state_address: '3/7/30'
+
+- platform: knx
+  name: child_ceiling
+  address:       '3/0/50'
+  state_address: '3/7/50'
+
+- platform: knx
+  name: child_socket
+  address:       '3/0/55'
+  state_address: '3/7/55'
+
+- platform: knx
+  name: multimedia_ceiling
+  address:       '3/0/60'
+  state_address: '3/7/60'
+
+- platform: knx
+  name: multimedia_socket
+  address:       '3/0/65'
+  state_address: '3/7/65'
+
+- platform: knx
+  name: bathroom_socket
+  address:       '3/2/30'
+  state_address: '3/2/31'

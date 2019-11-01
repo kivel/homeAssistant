@@ -1,0 +1,115 @@
+# global
+group.all_light:
+  hidden: false
+
+group.motionBM:
+  hidden: false
+  icon: mdi:motion-sensor
+
+group.motionGF:
+  hidden: false
+  icon: mdi:motion-sensor
+
+group.motion2F:
+  hidden: false
+  icon: mdi:motion-sensor
+
+# sensors
+binary_sensor.roof_precipitation:
+  friendly_name: Rain
+#  icon: mdi:weather-rainy
+sensor.roof_temperature:
+  friendly_name: Temperature
+sensor.roof_illuminance:
+  friendly_name: Lux
+sensor.roof_wind:
+  friendly_name: Wind
+  icon: mdi:weather-windy
+  unit_of_measurement: km/h
+
+switch.facadelight_west:
+  friendly_name: Facade West
+  icon: mdi:lightbulb
+
+light.diningroom_ceiling:
+  friendly_name: Table
+  icon: mdi:ceiling-light
+
+cover.main_right:
+  friendly_name: Right
+cover.main_center:
+  friendly_name: Center
+cover.main_left:
+  friendly_name: Left
+cover.kitchen:
+  friendly_name: Main
+cover.guest:
+  friendly_name: Main
+cover.child:
+  friendly_name: Main
+cover.bedroom:
+  friendly_name: Main
+cover.multimedia_right:
+  friendly_name: Right
+cover.multimedia_left:
+  friendly_name: Left
+
+light.living_room:
+  friendly_name: LiFX
+  icon: mdi:led-off
+light.livingroom_wall:
+  friendly_name: Wall
+  icon: mdi:wall-sconce-flat
+switch.livingroom_socket2:
+  friendly_name: LivingRoom LED
+  icon: mdi:led-strip
+
+light.kitchen_ceiling:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+switch.kitchen_lowerupper:
+  friendly_name: Spots
+  icon: mdi:track-light
+
+light.guest_ceiling:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+
+light.bedroom_wall:
+  friendly_name: Wall
+  icon: mdi:wall-sconce-flat
+
+switch.bedroom_socket_left:
+  friendly_name: 'Left'
+  icon: mdi:lamp
+
+switch.bedroom_socket_right:
+  friendly_name: 'Right'
+  icon: mdi:lamp
+
+switch.multimedia_ceiling:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+
+switch.child_ceiling:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+
+switch.child_socket:
+  friendly_name: Socket
+  icon: mdi:power-socket-de
+
+light.bathroom_ceiling:
+  friendly_name: 'Bathroom Ceiling'
+  icon: mdi:ceiling-light
+
+switch.bathroom_mirror:
+  friendly_name: 'Bathroom Mirror'
+  icon: mdi:wall-sconce-flat
+
+switch.bathroom_socket:
+  friendly_name: 'Bathroom Socket'
+
+light.dressingroom_ceiling:
+  friendly_name: 'Dresser Ceiling'
+  icon: mdi:ceiling-light

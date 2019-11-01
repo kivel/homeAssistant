@@ -1,0 +1,59 @@
+- title: '2nd floor'
+  path: topFloor
+  panel: true
+  cards:
+  - type: custom:layout-card
+    layout: vertical
+    cards:
+    - type: entities
+      title: 'Master bedroom'
+      show_header_toggle: true
+      entities:
+        - type: section
+          label: Lights
+        - type: custom:slider-entity-row
+          entity: light.bedroom_wall
+          toggle: true
+        - entity: switch.bedroom_socket_left
+        - entity: switch.bedroom_socket_right
+        - type: section
+          label: Blinds
+        - entity: cover.bedroom
+    - break
+    - type: entities
+      title: 'Small Bedroom'
+      show_header_toggle: true
+      entities:
+        - type: section
+          label: Lights
+        - entity: switch.multimedia_ceiling
+        - type: section
+          label: Blinds
+        - entity: cover.multimedia_right
+        - entity: cover.multimedia_left
+    - break
+    - type: entities
+      title: 'Child'
+      show_header_toggle: true
+      entities:
+        - type: section
+          label: Lights
+        - entity: switch.child_ceiling
+        - entity: switch.child_socket
+        - type: section
+          label: Blinds
+        - entity: cover.child
+    - type: entities
+      title: 'Bathroom/Dresser'
+      show_header_toggle: true
+      entities:
+        - type: section
+          label: Lights
+        - type: custom:slider-entity-row
+          entity: light.bathroom_ceiling
+          toggle: true
+        - entity: switch.bathroom_mirror
+        - entity: switch.bathroom_socket
+        - type: custom:slider-entity-row
+          entity: light.dressingroom_ceiling
+          toggle: true

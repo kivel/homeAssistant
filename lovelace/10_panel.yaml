@@ -1,0 +1,17 @@
+  - title: Panel
+    path: panel
+    cards:
+    - type: custom:banner-card
+      #      background: "#3399ff"
+      heading: "\U0001F6CB Living room"
+      link: /lovelace/home
+      entities:
+      - light.livingroom_wall
+      - switch.livingroom_socket2
+      - light.living_room
+      - entity: sensor.livingroom_temp
+        name: Temperature
+      - entity: sensor.livingroom_illu
+        name: Lux
+      - entity: cover.livingroom
+        name: Blinds

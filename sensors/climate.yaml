@@ -1,0 +1,74 @@
+- platform: knx
+  name: workshop_temp
+  state_address: '1/2/0'
+  type: 'temperature'
+
+- platform: knx
+  name: workshop_valve
+  state_address: '1/2/4'
+  type: 'percent'
+
+- platform: knx
+  name: livingroom_temp
+  state_address: '2/2/0'
+  type: 'temperature'
+
+- platform: knx
+  name: livingroom_valve
+  state_address: '2/2/4'
+  type: 'percent'
+
+- platform: knx
+  name: guest_temp
+  state_address: '2/2/5'
+  type: 'temperature'
+
+- platform: knx
+  name: guest_valve
+  state_address: '2/2/9'
+  type: 'percent'
+
+- platform: knx
+  name: corridor_temp_0
+  state_address: '2/2/10'
+  type: 'temperature'
+
+- platform: knx
+  name: corridor_temp_1
+  state_address: '2/2/15'
+  type: 'temperature'
+
+- platform: knx
+  name: corridor_relhumidity
+  state_address: '2/2/16'
+  type: 'humidity'
+
+- platform: knx
+  name: bedroom_temp
+  state_address: '3/2/0'
+  type: 'temperature'
+
+- platform: knx
+  name: bedroom_valve
+  state_address: '3/2/4'
+  type: 'percent'
+
+- platform: knx
+  name: child_temp
+  state_address: '3/2/5'
+  type: 'temperature'
+
+- platform: knx
+  name: child_valve
+  state_address: '3/2/9'
+  type: 'percent'
+
+- platform: knx
+  name: multimedia_temp
+  state_address: '3/2/10'
+  type: 'temperature'
+
+- platform: knx
+  name: multimedia_valve
+  state_address: '3/2/14'
+  type: 'percent'

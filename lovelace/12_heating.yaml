@@ -1,0 +1,21 @@
+- title: Heating
+  cards:
+    - type: thermostat
+      name: Workshop
+      entity: climate.workshop_temp
+    - type: thermostat
+      name: Livingroom
+      entity: climate.livingroom_temp
+    - type: thermostat
+      name: Guest
+      entity: climate.guest_temp
+    - type: thermostat
+      name: Master bedroom
+      entity: climate.bedroom_temp
+    - type: thermostat
+      name: Child
+      entity: climate.child_temp
+    - type: thermostat
+      name: Small bedroom
+      entity: climate.multimedia_temp
+

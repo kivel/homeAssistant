@@ -1,0 +1,31 @@
+motionBM:
+  name: motion basement
+  entities:
+  - binary_sensor.motion_utility
+  - binary_sensor.motion_workshop
+  - binary_sensor.motion_garage
+  - binary_sensor.motion_storage
+  - binary_sensor.motion_corridor1_ceiling
+  - binary_sensor.motion_corridor1_stairs
+
+motionGF:
+  name: motion groundfloor
+  entities:
+  - binary_sensor.motion_livingroom
+  - binary_sensor.motion_guest
+  - binary_sensor.motion_corridor2_ceiling
+  - binary_sensor.motion_corridor2_stairs
+  - binary_sensor.motion_corridor2_wall
+  - binary_sensor.motion_restroom
+
+motion2F:
+  name: 2nd groundfloor
+  entities:
+  - binary_sensor.motion_bedroom_ceiling
+  - binary_sensor.motion_bedroom_floor
+  - binary_sensor.motion_dressingroom
+  - binary_sensor.motion_bathroom
+  - binary_sensor.motion_corridor3_wall
+  - binary_sensor.motion_child
+  - binary_sensor.motion_multimedia
+

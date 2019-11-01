@@ -1,0 +1,25 @@
+- title: Astro
+  panel: true
+  cards:
+  - type: custom:layout-card
+    layout: vertical
+#    column_num: 2
+    cards:
+    - type: picture
+      image: https://clearoutside.com/forecast_image_large/47.48/8.08/forecast.png
+    - break
+    - type: custom:mini-graph-card
+      entities:
+      - sensor.roof_illuminance
+      hours_to_show: 12
+      points_per_hour: 2
+    - type: custom:mini-graph-card
+      entities:
+      - sensor.roof_wind
+      hours_to_show: 12
+      points_per_hour: 2
+    - type: custom:mini-graph-card
+      entities:
+      - sensor.roof_temperature
+      hours_to_show: 12
+      points_per_hour: 2

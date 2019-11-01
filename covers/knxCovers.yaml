@@ -1,0 +1,80 @@
+- platform: knx
+  name: "kitchen"
+  move_long_address: '2/1/0'
+  move_short_address: '2/1/1'
+  position_address: '2/1/2'
+  angle_address: '2/1/3'
+  position_state_address: '2/6/2'
+  angle_state_address: '2/6/3'
+
+- platform: knx
+  name: "main_right"
+  move_long_address: '2/1/5'
+  move_short_address: '2/1/6'
+  position_address: '2/1/7'
+  angle_address: '2/1/8'
+  position_state_address: '2/6/7'
+  angle_state_address: '2/6/8'
+
+- platform: knx
+  name: "main_center"
+  move_long_address: '2/1/10'
+  move_short_address: '2/1/11'
+  position_address: '2/1/12'
+  angle_address: '2/1/13'
+  position_state_address: '2/6/12'
+  angle_state_address: '2/6/13'
+
+- platform: knx
+  name: "main_left"
+  move_long_address: '2/1/15'
+  move_short_address: '2/1/16'
+  position_address: '2/1/17'
+  angle_address: '2/1/18'
+  position_state_address: '2/6/17'
+  angle_state_address: '2/6/18'
+
+- platform: knx
+  name: "guest"
+  move_long_address: '2/1/20'
+  move_short_address: '2/1/21'
+  position_address: '2/1/22'
+  angle_address: '2/1/23'
+  position_state_address: '2/6/22'
+  angle_state_address: '2/6/23'
+
+- platform: knx
+  name: "bedroom"
+  move_long_address: '3/1/0'
+  move_short_address: '3/1/1'
+  position_address: '3/1/2'
+  angle_address: '3/1/3'
+  position_state_address: '3/6/2'
+  angle_state_address: '3/6/3'
+
+- platform: knx
+  name: "child"
+  move_long_address: '3/1/5'
+  move_short_address: '3/1/6'
+  position_address: '3/1/7'
+  angle_address: '3/1/8'
+  position_state_address: '3/6/7'
+  angle_state_address: '3/6/8'
+
+- platform: knx
+  name: "multimedia_left"
+  move_long_address: '3/1/10'
+  move_short_address: '3/1/11'
+  position_address: '3/1/12'
+  angle_address: '3/1/13'
+  position_state_address: '3/6/12'
+  angle_state_address: '3/6/13'
+
+- platform: knx
+  name: "multimedia_right"
+  move_long_address: '3/1/15'
+  move_short_address: '3/1/16'
+  position_address: '3/1/17'
+  angle_address: '3/1/18'
+  position_state_address: '3/6/17'
+  angle_state_address: '3/6/18'
