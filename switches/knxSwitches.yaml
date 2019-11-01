@@ -18,6 +18,7 @@
 # basement
 ################################################################################
 
+  #### LIGHTS
 - platform: knx
   name: utility_ceiling
   address:       '1/0/0'
@@ -47,6 +48,37 @@
   name: garage_ceiling
   address:       '1/0/25'
   state_address: '1/7/25'
+
+  #### PIR
+- platform: knx
+  name: utility_pir
+  address:       '1/0/4'
+  state_address: '1/7/4'
+
+- platform: knx
+  name: storage_pir
+  address:       '1/0/9'
+  state_address: '1/7/9'
+
+- platform: knx
+  name: corridor1_pir
+  address:       '1/0/14'
+  state_address: '1/7/14'
+
+- platform: knx
+  name: workshop_pir
+  address:       '1/0/19'
+  state_address: '1/7/19'
+
+- platform: knx
+  name: driveway_pir
+  address:       '1/0/24'
+  state_address: '1/7/24'
+
+- platform: knx
+  name: garage_pir
+  address:       '1/0/29'
+  state_address: '1/7/29'
 
 ################################################################################
 # ground floor
