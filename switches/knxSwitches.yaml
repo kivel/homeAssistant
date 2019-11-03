@@ -48,6 +48,37 @@
   address:       '1/0/25'
   state_address: '1/7/25'
 
+  # ----- PIR
+- platform: knx
+  name: utility_pir
+  address:       '1/0/4'
+  state_address: '1/7/4'
+
+- platform: knx
+  name: storage_pir
+  address:       '1/0/9'
+  state_address: '1/7/9'
+
+- platform: knx
+  name: corridor1_pir
+  address:       '1/0/14'
+  state_address: '1/7/14'
+
+- platform: knx
+  name: workshop_pir
+  address:       '1/0/19'
+  state_address: '1/7/19'
+
+- platform: knx
+  name: driveway_pir
+  address:       '1/0/24'
+  state_address: '1/7/24'
+
+- platform: knx
+  name: garage_pir
+  address:       '1/0/29'
+  state_address: '1/7/29'
+
 ################################################################################
 # ground floor
 ################################################################################
@@ -120,6 +151,48 @@
   address: '2/0/110'
   state_address: '2/7/110'
 
+  #--- PIR
+
+- platform: knx
+  name: livinroom_pir
+  address: '2/0/29'
+  state_address: '2/7/29'
+
+- platform: knx
+  name: facade_pir_south
+  address: '2/0/59'
+  state_address: '2/7/59'
+
+- platform: knx
+  name: facade_pir_west
+  address: '2/0/64'
+  state_address: '2/7/64'
+
+- platform: knx
+  name: guest_pir
+  address: '2/0/74'
+  state_address: '2/7/74'
+
+- platform: knx
+  name: corridor2_pir_ceiling
+  address: '2/0/93'
+  state_address: '2/7/93'
+
+- platform: knx
+  name: corridor2_pir_wall
+  address: '2/0/94'
+  state_address: '2/7/94'
+
+- platform: knx
+  name: restroom_pir
+  address: '2/0/104'
+  state_address: '2/7/104'
+
+- platform: knx
+  name: entrance_pir
+  address: '2/0/109'
+  state_address: '2/7/109'
+
 ################################################################################
 # upper floor
 ################################################################################
@@ -173,3 +246,42 @@
   name: bathroom_socket
   address:       '3/2/30'
   state_address: '3/2/31'
+
+  #--- PIR
+
+- platform: knx
+  name: bedroom_pir_ceiling
+  address:       '3/0/04'
+  state_address: '3/7/04'
+
+- platform: knx
+  name: bedroom_pir_wall
+  address:       '3/0/24'
+  state_address: '3/7/24'
+
+- platform: knx
+  name: dresser_pir
+  address:       '3/0/29'
+  state_address: '3/7/29'
+
+- platform: knx
+  name: bathroom_pir
+  address:       '3/0/39'
+  state_address: '3/7/39'
+
+- platform: knx
+  name: corridor3_pir
+  address:       '3/0/44'
+  state_address: '3/7/44'
+
+- platform: knx
+  name: child_pir
+  address:       '3/0/54'
+  state_address: '3/7/54'
+
+- platform: knx
+  name: multimedia_pir
+  address:       '3/0/64'
+  state_address: '3/7/64'
+
+
