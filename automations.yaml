@@ -8,3 +8,33 @@
   - data:
       entity_id: switch.blinds_shadow_all
     service: switch.turn_on
+
+# Example automation
+- id: LED_harmony_ON
+  alias: TV LED on
+  trigger:
+  - platform: event
+    event_type: roku_command
+    event_data:
+      source_name: Home Assistant
+      type: keypress
+      key: Fwd
+  action:
+  - data: 
+      entity_id: switch.livingroom_socket2
+    service: switch.turn_on
+
+- id: LED_harmony_OFF
+  alias: TV LED off
+  trigger:
+  - platform: event
+    event_type: roku_command
+    event_data:
+      source_name: Home Assistant
+      type: keypress
+      key: Rev
+  action:
+  - data: 
+      entity_id: switch.livingroom_socket2
+    service: switch.turn_off
+
