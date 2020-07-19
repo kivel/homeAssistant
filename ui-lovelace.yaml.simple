@@ -1,0 +1,30 @@
+title: My Awesome Home
+resources:
+  - url: /local/simple-thermostat.js?v=1
+    type: module
+  - url: /local/slider-entity-row.js?v=1
+    type: module
+  - url: /local/card-tools.js?v=1
+    type: js
+  - url: /local/layout-card.js?v=1
+    type: js
+
+views:
+    # View tab title.
+  - title: Example
+    cards:
+        # The markdown card will render markdown text.
+      - type: markdown
+        title: Lovelace
+        content: >
+          Welcome to your **Lovelace UI**
+
+  - title: Default
+    panel: true
+    cards:
+      - type: custom:layout-card
+        cards:
+          - type: entities
+            title: 1
+            entities:
+              - light.bed_light

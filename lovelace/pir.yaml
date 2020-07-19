@@ -1,0 +1,34 @@
+- title: PIR
+  path: pir
+  panel: true
+  cards:
+  - type: custom:layout-card
+    layout: vertical
+    #      column_num: 3
+    cards:
+    - type: entities
+      title: Basement
+      show_header_toggle: true
+      entities:
+        - entity: switch.utility_pir
+        - entity: switch.storage_pir
+        - entity: switch.workshop_pir
+        - entity: switch.corridor1_pir
+        - entity: switch.driveway_pir
+        - entity: switch.garage_pir
+        - entity: switch.livinroom_pir
+        - entity: switch.facade_pir_south
+        - entity: switch.facade_pir_west
+        - entity: switch.guest_pir
+        - entity: switch.corridor2_pir_ceiling
+        - entity: switch.corridor2_pir_wall
+        - entity: switch.restroom_pir
+        - entity: switch.entrance_pir
+        - entity: switch.bedroom_pir_ceiling
+        - entity: switch.bedroom_pir_wall
+        - entity: switch.dresser_pir
+        - entity: switch.bathroom_pir
+        - entity: switch.corridor3_pir
+        - entity: switch.child_pir
+        - entity: switch.multimedia_pir
+ 

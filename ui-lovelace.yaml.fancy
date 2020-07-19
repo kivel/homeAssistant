@@ -1,0 +1,256 @@
+title: My Awesome Home
+resources:
+  - url: /local/simple-thermostat.js?v=1
+    type: module
+  - url: /local/slider-entity-row.js
+    type: module
+  - url: /local/card-tools.js?v=1
+    type: js
+  - url: /local/layout-card.js?v=1
+    type: js
+
+views:
+  - title: Home
+    panel: true
+    cards:
+    - type: custom:layout-card
+      layout: vertical
+      #      column_num: 3
+      cards:
+      - type: weather-forecast
+        entity: weather.dark_sky
+        name: Zeihen / AG
+      - type: glance
+        entities:
+        - binary_sensor.roof_precipitation
+        - group.all_switches
+        - sensor.roof_temperature
+        - sensor.roof_wind
+      - type: history-graph
+        title: Roof
+        entities:
+        - sensor.roof_temperature_mean
+        - sensor.roof_wind_mean
+        - sensor.roof_wind
+      - type: glance
+        title: System Information
+        entities:
+        - sensor.load_1m
+        - sensor.load_5m
+        - sensor.load_15m
+        - sensor.memory_use_percent
+      - break
+      - type: entities
+        title: Livingroom
+        show_header_toggle: true
+        entities:
+          - type: section
+            label: Lights
+          - type: custom:slider-entity-row
+            entity: light.livingroom_wall
+            toggle: true
+          - entity: switch.livingroom_socket2
+          - type: section
+            label: Blinds
+          - entity: cover.main_left
+      - type: entities
+        title: Diningroom
+        show_header_toggle: true
+        entities:
+          - type: section
+            label: Lights
+          - type: custom:slider-entity-row
+            entity: light.diningroom_ceiling
+            name: Table
+            toggle: true
+          - type: custom:slider-entity-row
+            entity: light.living_room
+            toggle: true
+          - type: section
+            label: Blinds
+          - entity: cover.main_center
+          - entity: cover.main_right
+      - break
+      - type: entities
+        title: Kitchen
+        show_header_toggle: true
+        entities:
+          - type: section
+            label: Lights
+          - type: custom:slider-entity-row
+            entity: light.kitchen_ceiling
+            toggle: true
+          - entity: switch.kitchen_lowerupper
+          - type: section
+            label: Blinds
+          - entity: cover.kitchen
+      - type: entities
+        title: Guest
+        show_header_toggle: true
+        entities:
+          - type: section
+            label: Lights
+          - type: custom:slider-entity-row
+            entity: light.guest_ceiling
+            toggle: true
+          #- entity: switch.kitchen_lowerupper
+          - type: section
+            label: Blinds
+          - entity: cover.guest
+
+  - title: Blinds
+    cards:
+      - type: entities
+        title: Blinds
+        show_header_toggle: false
+        entities:
+          - type: section
+            label: Groundfloor
+          - entity: cover.kitchen
+          - type: custom:slider-entity-row
+            entity: cover.kitchen
+            full_row: true
+          - entity: cover.main_left
+          - type: custom:slider-entity-row
+            entity: cover.main_left
+            full_row: true
+          - entity: cover.main_center
+          - type: custom:slider-entity-row
+            entity: cover.main_center
+            full_row: true
+          - entity: cover.main_right
+          - type: custom:slider-entity-row
+            entity: cover.main_right
+            full_row: true
+          - entity: cover.guest
+          - type: custom:slider-entity-row
+            entity: cover.guest
+            full_row: true
+          - type: section
+            label: Upstairs
+          - entity: cover.bedroom
+          - type: custom:slider-entity-row
+            entity: cover.bedroom
+            full_row: true
+          - entity: cover.child
+          - type: custom:slider-entity-row
+            entity: cover.child
+            full_row: true
+          - entity: cover.multimedia_left
+          - type: custom:slider-entity-row
+            entity: cover.multimedia_left
+            full_row: true
+          - entity: cover.multimedia_right
+          - type: custom:slider-entity-row
+            entity: cover.multimedia_right
+            full_row: true
+
+
+      - type: entities
+        title: Sensors
+        show_header_toggle: false
+        entities:
+          - type: section
+            label: Weather
+          - type: sensor
+            entity: sensor.roof_temperature
+          - type: sensor
+            entity: sensor.roof_wind
+          - type: sensor
+            entity: sensor.roof_illuminance
+
+  - title: Heating
+    cards:
+      - type: custom:simple-thermostat
+        entity: climate.workshop_temp
+        step_size: 1
+        sensors:
+          - entity: sensor.workshop_valve
+        hide:
+          mode: false
+
+  - title: Statistics
+    panel: true
+    cards:
+    - type: custom:layout-card
+      layout: vertical
+      column_num: 2
+      cards:
+      - type: entities
+        title: Raspberry Pi
+        show_header_toggle: false
+        entities:
+        - sensor.cpu_load_1_min_mean
+        - sensor.cpu_load_5_min_mean
+        - sensor.cpu_load_15_min_mean
+        - sensor.free_memory_mean
+      - type: entities
+        title: Weather
+        show_header_toggle: false
+        entities:
+        - sensor.roof_temperature_mean
+        - sensor.roof_wind_mean
+
+  - title: SandBox
+    panel: true
+    cards:
+    - type: custom:layout-card
+      layout: vertical
+      column_num: 2
+      cards:
+      - type: entities
+        title: Motion
+        show_header_toggle: false
+        entities:
+        - type: section
+          label: Groundfloor
+        - entity: group.motion2
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_livingroom
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_guest
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_corridor2_ceiling
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_corridor2_stairs
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_corridor2_wall
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_restroom
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_entrance
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_patio
+          secondary_info: last-changed
+        - type: section
+          label: Upstairs
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_bedroom_ceiling
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_bedroom_floor
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_dressingroom
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_bathroom
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_corridor3_wall
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_child
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_multimedia
+          secondary_info: last-changed
+        - type: section
+          label: Basement
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_utility
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_workshop
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_garage
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_storage
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_corridor1_ceiling
+          secondary_info: last-changed
+        - entity: binary_sensor.motion_corridor1_stairs
+          secondary_info: last-changed
